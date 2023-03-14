@@ -1,6 +1,7 @@
 #include <adn.hpp>
 #include <string>
-
+#include <thread>
+#include <chrono>
 
 Yazilacak::Yazilacak(std::string girdi)
 {
@@ -24,6 +25,7 @@ void Yazilacak::yazma()
             {
                 u = i;
                 std::cout << kelime << u << "\n";
+                std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(200));
             }
             kelime += u;
         }
@@ -34,6 +36,7 @@ void Yazilacak::yazma()
             {
                 u = i;
                 std::cout << kelime << u << "\n";
+                std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(200));
             }
             kelime += u;
         }
@@ -43,6 +46,7 @@ void Yazilacak::yazma()
             u = 32;
             std::cout << kelime << u << "\n";
             kelime += u;
+            std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(200));
         }
     }
 }
