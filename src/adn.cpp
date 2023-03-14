@@ -49,4 +49,7 @@ void Yazilacak::yazma()
             std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(100));
         }
     }
+    std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(500));
+    std::cout << "****************************************************" << "\n";   
+    std::cout << "\n";
 }

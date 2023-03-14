@@ -18,3 +18,9 @@ class Yazilacak
     void yazma();
 
 };
+
+class AraYuz
+{
+    public:
+    void arayuz();
+};
